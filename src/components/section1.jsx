@@ -4,7 +4,11 @@ function MoviesToWatch(){
     return(
         <div>
             <h1> Movies to watch </h1>
-            <p>movies from API wil display here</p>
+            <div>
+            <p>movie one</p>
+            <p>movie two</p>
+            <p>movie three</p>
+            </div>
         </div>
     )
 }
