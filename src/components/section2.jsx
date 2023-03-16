@@ -1,9 +1,22 @@
 import React from 'react';
-function CurrentlyWatching(){
-    return(
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+
+
+
+function CurrentlyWatching() {
+    return (
         <div>
-            <h1> Currently Watching </h1>
-            <p>movie will render here</p>
+            <React.Fragment>
+                <CssBaseline />
+                <Container fixed>
+                    <Box sx={{ bgcolor: '#cfe8fc', height: '90vh', width: '40vh' }} >
+                    <h3>Currently Watching</h3>
+                    </Box>
+                </Container>
+            </React.Fragment>
+            
         </div>
     )
 }
