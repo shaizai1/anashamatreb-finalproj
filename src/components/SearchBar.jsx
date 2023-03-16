@@ -1,16 +1,35 @@
 import React, { useState } from 'react'
 import "./SearchBar.css";
 
+let history = JSON.parse(localStorage.getItem("history")) || [];
+
 export const SearchBar = () => {
     const [input, setInput] = useState("");
+
+//drop down menu here:
+
+
+    //create a state no empty string
 
     const fetchData = (value) => {
         // fetch("https://www.omdbapi.com/?t=god+father&y=&plot=short&apikey=b5609ae1")
         
+
+        //store data from fetch send to an element
+    
+        //
         
         fetch(`https://www.omdbapi.com/?t=${value}&y=&plot=short&apikey=b5609ae1`)
         .then(resp =>resp.json())
-        .then(data =>console.log(data));
+        .then(data =>{
+            console.log(data.Poster, data.Title)
+            const newMovie = {
+               poster: data.Poster,
+               title: data.Title
+            }
+            history.push(newMovie);
+            localStorage.setItem("history",JSON.stringify(history))
+        });
         
     }
 
