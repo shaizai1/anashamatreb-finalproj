@@ -1,6 +1,5 @@
 
 
-
 import './App.css'
 import { SearchBar } from './components/SearchBar';
 
