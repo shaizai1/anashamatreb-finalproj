@@ -13,15 +13,14 @@ function App() {
   return (
     <div className="App">
 
-      <header className="App-header">
-      <div className="App">Movie List<div className="search-bar-container">
-        <SearchBar />
+      <header className="App-header"> </header>
+        <div className="App">Movie List </div> <div className="search-bar-container">
+        <SearchBar /> </div>
         <div>SearchResults</div>
-         </div></header>
-         
           <MoviesToWatch />
-       <CurrentlyWatching />
+        <CurrentlyWatching />
       <FinishedWatching />
+      
         
       
     </div>
