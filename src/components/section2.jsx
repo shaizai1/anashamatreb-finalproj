@@ -11,12 +11,17 @@ function CurrentlyWatching() {
             <React.Fragment>
                 <CssBaseline />
                 <Container fixed>
-                    <Box sx={{ bgcolor: '#cfe8fc', height: '90vh', width: '40vh' }} >
-                    <h3>Currently Watching</h3>
+                    <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
+                        <h3>Currently Watching</h3>
+                        <p>Movie 1</p>
+                        <p>Movie b</p>
+                        <p>Movie c</p>
+                        <p>Movie 4</p>
+
                     </Box>
                 </Container>
             </React.Fragment>
-            
+
         </div>
     )
 }

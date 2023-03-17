@@ -6,24 +6,27 @@ import MoviesToWatch from './components/section1';
 
 function App() {
 
- // const fetchData= (value) => {
-    //   fetch("https://www.omdbapi.com/?t=god+father&y=&plot=short&apikey=b5609ae1")
-    // }
-    
-  return (
-    <div className="App">
+  // const fetchData= (value) => {
+  //   fetch("https://www.omdbapi.com/?t=god+father&y=&plot=short&apikey=b5609ae1")
+  // }
 
-      <header className="App-header"> </header>
-        <div className="App">Movie List </div> <div className="search-bar-container">
-        <SearchBar /> </div>
+  return (
+    
+    <div className="App">
+      <div className="search-bar-container">
+        <h1>Movie Watch List</h1>
+        <SearchBar />
         <div>SearchResults</div>
-          <MoviesToWatch />
-        <CurrentlyWatching />
+      </div>
+
+    <div className="sectiondivs">
+      <MoviesToWatch />
+      <CurrentlyWatching />
       <FinishedWatching />
-      
-        
-      
-    </div>
+      </div>
+
+    </div >
+  
   );
 }
 

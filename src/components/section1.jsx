@@ -10,8 +10,8 @@ function MoviesToWatch(){
             <React.Fragment>
                 <CssBaseline />
                 <Container fixed>
-                    <Box sx={{ bgcolor: '#cfe8fc', height: '90vh', width: '40vh' }} >
-                    <h3> Movies to watch </h3>
+                    <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
+                    <h3> Movies to Watch </h3>
                     <p>Movie 1</p>
                     <p>Movie 2</p>
                     <p>Movie 3</p>
