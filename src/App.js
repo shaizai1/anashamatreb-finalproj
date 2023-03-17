@@ -4,6 +4,7 @@ import { SearchBar } from './components/SearchBar';
 import CurrentlyWatching from './components/section2';
 import FinishedWatching from './components/section3';
 import MoviesToWatch from './components/section1';
+import MovieQuote from './components/MovieQuote';
 
 function App() {
 
@@ -23,7 +24,9 @@ function App() {
       <FinishedWatching />
       
         
-      
+      <footer className='App-footer'>
+        <MovieQuote />
+      </footer>
     </div>
   );
 }
