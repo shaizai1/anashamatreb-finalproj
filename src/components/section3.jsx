@@ -9,7 +9,7 @@ function FinishedWatching () {
             <React.Fragment>
                 <CssBaseline />
                 <Container fixed>
-                    <Box sx={{ bgcolor: '#cfe8fc', height: '90vh', width: '40vh' }} >
+                    <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
                     <h3> Finished Watching </h3>
                     <p>Movie 1</p>
                     <p>Movie 2</p>
