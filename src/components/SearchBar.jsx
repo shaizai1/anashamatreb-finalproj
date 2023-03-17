@@ -17,10 +17,9 @@ export const SearchBar = () => {
 
 
         //-- Fetch Request Section --> Just added useEffect here:
-       
 
-        //data in the drop down will only need the setpart. add it to movie to watch.
-        //state at app.js and pass down to section 1 will need both setstate and set value.
+        //data in the drop down will only need the set part. add it to movie to watch.
+        //state at app.js and pass down to section 1 will need both set state and set value.
 
 
 
@@ -36,9 +35,8 @@ export const SearchBar = () => {
                 history.push(newMovie);
                 localStorage.setItem("history", JSON.stringify(history))
             });
-  
             
-            //-- Fetch Request Section -->
+        //-- Fetch Request Section -->
             
     }
 
