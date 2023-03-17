@@ -2,6 +2,8 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import { SearchBar } from './SearchBar';
+
 
 
 function MoviesToWatch(){
@@ -12,6 +14,7 @@ function MoviesToWatch(){
                 <Container fixed>
                     <Box sx={{ bgcolor: '#cfe8fc', height: '90vh', width: '40vh' }} >
                     <h3> Movies to watch </h3>
+                    
                     <p>Movie 1</p>
                     <p>Movie 2</p>
                     <p>Movie 3</p>
