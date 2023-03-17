@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import { SearchBar } from './components/SearchBar';
 import CurrentlyWatching from './components/section2';
