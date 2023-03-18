@@ -1,6 +1,8 @@
 import React from 'react';
 import "./SearchBar.css";
 import { useState } from "react";
+import { display } from '@mui/system';
+
 
 let history = JSON.parse(localStorage.getItem("history")) || [];
 
@@ -34,7 +36,29 @@ export const SearchBar = () => {
                 }
                 history.push(newMovie);
                 localStorage.setItem("history", JSON.stringify(history))
+
+                function displayMovie(data) {
+                    const movie = newMovie;
+                    const movieDiv = document.getElementById("apiMovie"); 
+                    // movie name
+                    const movieName = document.createElement("h4");
+                    movieName.innerHTML = movie.title;
+                    movieDiv.appendChild(movieName);
+                    // movie image
+                    const movieImg = document.createElement("img");
+                    movieImg.src = movie.poster;
+                    movieDiv.appendChild(movieImg);
+                    // movie year
+                    const movieYear = document.createElement("h5")
+                    movieYear.innerHTML = movie.year;
+                    movieDiv.appendChild(movieYear)
+                    
+                }
+                displayMovie(data)
+                
             });
+
+            
             
         //-- Fetch Request Section -->
             
@@ -64,4 +88,5 @@ export const SearchBar = () => {
         </form>
     </div>;
 
-}
+};
+export default SearchBar;
