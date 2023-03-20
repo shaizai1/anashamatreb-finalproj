@@ -6,6 +6,7 @@ import FinishedWatching from './components/section3';
 import MoviesToWatch from './components/section1';
 import MovieQuote from './components/MovieQuote';
 
+
 function App() {
 
   // const fetchData= (value) => {
