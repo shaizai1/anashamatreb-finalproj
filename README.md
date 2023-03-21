@@ -71,3 +71,10 @@ We worked together to produce this application by splitting the work between our
 ### Kanban Board:
 <img src="." width="600">
 
+### HTML Mock-up:
+<img src="." width="600">
+
+### Earlier version:
+<img src="." width="600">
+
+
