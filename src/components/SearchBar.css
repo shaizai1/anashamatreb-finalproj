@@ -25,16 +25,15 @@ input:focus {
 .sectiondivs{
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     font-family:'Lucida Sans';
     background-color: #020230;
-
+    padding: 5%;
 }
 
-/* #search-icon {
+#search-icon {
     color: royalblue;
-
-} */
+} 
 
 
 
