@@ -1,7 +1,7 @@
 import React from 'react';
 import "./SearchBar.css";
 import { useState } from "react";
-import { display } from '@mui/system';
+// import { display } from '@mui/system';
 
 
 let history = JSON.parse(localStorage.getItem("history")) || [];
