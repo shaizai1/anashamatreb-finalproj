@@ -1,30 +1,27 @@
-import React from 'react';
+import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography'
 
 // import { SearchBar } from './SearchBar';
 
-
-
-
-
-function MoviesToWatch(){
-    return(
+function MoviesToWatch() {
+    return (
         <div>
             <React.Fragment>
                 <CssBaseline />
-                <Container fixed>
+                <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+                            Movies to Watch
+                            <p id='apiMovie'></p>
+                        </Typography>
 
-                    <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
-                    <h3> Movies to Watch </h3>
-                    
-                    <p id='apiMovie'></p>
-                    
-                </Box>
-        </Container>
-    </React.Fragment>
-            
+                    </CardContent>
+                </Card>
+            </React.Fragment>
+
         </div>
     )
 }

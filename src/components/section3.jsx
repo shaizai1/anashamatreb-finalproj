@@ -1,25 +1,32 @@
-import React from 'react';
+import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
-function FinishedWatching () {
-    return(
+
+function FinishedWatching() {
+    return (
         <div>
             <React.Fragment>
                 <CssBaseline />
-                <Container fixed>
-                    <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
-                    <h3> Finished Watching </h3>
-                    <p>Movie 1</p>
-                    <p>Movie 2</p>
-                    <p>Movie 3</p>
-                </Box>
-        </Container>
-    </React.Fragment>
-            
+
+                <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+                            Finished Watching
+                        </Typography>
+                        <p>Movie 1</p>
+                        <p>Movie 2</p>
+                        <p>Movie 3</p>
+                    </CardContent>
+                </Card>
+            </React.Fragment>
+
         </div>
     )
 }
 
 export default FinishedWatching;
+
+

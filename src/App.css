@@ -20,6 +20,17 @@
   text-align: center;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+}
+
+footer h4, footer p, footer h5{
+  color:#020230;
+}
+
 
 /*align-items: 200px;
 min-width: 200px;*/
