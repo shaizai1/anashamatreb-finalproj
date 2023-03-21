@@ -66,15 +66,15 @@ This project was built by:
 We worked together to produce this application by splitting the work between ourselves and using the git workflow to merge our work into a single deployed application. To keep a clear idea of our work, we created a wireframe for our application and a Kanban Board to track our work on GitHub, as well as mapping out our react components. We held daily standup meetings and utilized agile methodologies to keep us on track. 
 
 ### Application Wireframe:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/Wireframe.png?raw=true" width="600">
 
 ### Kanban Board:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/Kanban-board.png?raw=true" width="600">
 
 ### HTML Mock-up:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/HTML-mock-up.png?raw=true" width="600">
 
 ### Earlier version:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/Early-development.png?raw=true" width="600">
 
 
