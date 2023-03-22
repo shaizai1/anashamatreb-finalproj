@@ -5,6 +5,7 @@ import CurrentlyWatching from './components/section2';
 import FinishedWatching from './components/section3';
 import MoviesToWatch from './components/section1';
 import MovieQuote from './components/MovieQuote';
+import WebImage from './components/webimage';
 
 
 function App() {
@@ -16,8 +17,11 @@ function App() {
   return (
     
     <div className="App">
+      
+      
+
+
       <div className="search-bar-container">
-        <h1>Movie Watch List</h1>
         <SearchBar />
         <div>SearchResults</div>
       </div>
