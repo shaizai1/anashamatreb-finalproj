@@ -14,9 +14,6 @@ function CurrentlyWatching() {
                         <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
                             Currently Watching
                         </Typography>
-                        <p>Movie 1</p>
-                        <p>Movie 2</p>
-                        <p>Movie 3</p>
                     </CardContent>
                 </Card>
             </React.Fragment>
