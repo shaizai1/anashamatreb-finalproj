@@ -2,22 +2,29 @@
 
 
 .App {
-  background-color: #020230;
+  background-color: #00000d;
   color: white;
-  font-family: 'Lucida Sans';
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   height: 60vh;
   width: 100vw;
   text-align: center;
 }
 
 .search-bar-container {
-  padding-top: 20vh;
+  /* padding-top: 20vh; */
   width: 40%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.title {
+  background-color: black;
+  padding: 3vh ;
+  color: #c1aa17;
+
 }
 
 footer{

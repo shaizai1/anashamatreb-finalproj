@@ -1,0 +1,16 @@
+.masthead {
+    position: relative;
+    width: 100%;
+    padding: 150px;
+    color: white;
+    background: url(https://img.freepik.com/free-photo/dark-vip-cinema-studio-still-life_23-2149500607.jpg?w=826&t=st=1679527961~exp=1679528561~hmac=4c84729078bde14624f01a4ef15671e15182cca9ce6229e15e1ed7aa3a6c832f);
+    background-size:cover;
+    background-position: center;
+    
+  }
+
+  .jumbotron-h1 {
+    color: #c1aa17;
+    text-align:right;
+    font-size:20px;
+  }

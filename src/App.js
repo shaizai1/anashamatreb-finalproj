@@ -5,6 +5,7 @@ import CurrentlyWatching from './components/section2';
 import FinishedWatching from './components/section3';
 import MoviesToWatch from './components/section1';
 import MovieQuote from './components/MovieQuote';
+import Jumbotron from './components/jumbotron'
 
 
 function App() {
@@ -16,11 +17,22 @@ function App() {
   return (
     
     <div className="App">
-      <div className="search-bar-container">
-        <h1>Movie Watch List</h1>
-        <SearchBar />
-        <div>SearchResults</div>
+<div className="search-bar-container">
+      
+      <SearchBar />
       </div>
+
+<div className="Jumbotron">
+
+        <Jumbotron />
+        
+        </div>
+
+        <div className='title'>
+        <h1 className='title'>Movie Watch List</h1>
+        </div>
+      
+      
 
     <div className="sectiondivs">
       <MoviesToWatch />
