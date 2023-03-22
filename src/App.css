@@ -2,7 +2,7 @@
 
 
 .App {
-  font-size: 28px;
+  font-size: 16px;
   background-color: #020230;
   color: white;
   height: 60%;
@@ -27,6 +27,7 @@ footer{
   border-radius: 10px;
   padding: 2%;
   margin: 2%;
+  box-shadow: 0px 0px 8px #ddd;
 }
 
 footer h4, footer p, footer h5{

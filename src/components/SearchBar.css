@@ -28,8 +28,7 @@ input:focus {
     justify-content: space-evenly;
     font-family:'Lucida Sans';
     background-color: #020230;
-    border-radius: 20px;
-    padding: 10%;
+    margin: 10%
 }
 
 
