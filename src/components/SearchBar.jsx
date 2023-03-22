@@ -1,12 +1,11 @@
 import React from 'react';
 import "./SearchBar.css";
 import { useState } from "react";
-// import { display } from '@mui/system';
 
 
-let history = JSON.parse(localStorage.getItem("history")) || [];
 
-export const SearchBar = () => {
+
+export const SearchBar = ({characters, setCharacters}) => {
     const [input, setInput] = useState([]);
 
 
@@ -29,32 +28,22 @@ export const SearchBar = () => {
             .then(resp => resp.json())
             .then(data => {
                 console.log(data.Poster, data.Title, data.Year)
+                console.log(data)
+               
+                const id = data.imdbID.replace(/\D/g,'');
+                console.log(data.imdbID)
                 const newMovie = {
                     poster: data.Poster,
                     title: data.Title,
-                    year: data.Year
-                }
-                history.push(newMovie);
-                localStorage.setItem("history", JSON.stringify(history))
+                    year: data.Year,
+                    id: id
+            
 
-                function displayMovie(data) {
-                    const movie = newMovie;
-                    const movieDiv = document.getElementById("apiMovie"); 
-                    // movie name
-                    const movieName = document.createElement("h4");
-                    movieName.innerHTML = movie.title;
-                    movieDiv.appendChild(movieName);
-                    // movie image
-                    const movieImg = document.createElement("img");
-                    movieImg.src = movie.poster;
-                    movieDiv.appendChild(movieImg);
-                    // movie year
-                    const movieYear = document.createElement("h5")
-                    movieYear.innerHTML = movie.year;
-                    movieDiv.appendChild(movieYear)
-                    
                 }
-                displayMovie(data)
+                const newSection1 = {...characters};
+                const oldMovies = characters.sections[0].movies
+                newSection1.sections[0].movies = [newMovie, ...oldMovies]
+                setCharacters(newSection1)
                 
             });
 
