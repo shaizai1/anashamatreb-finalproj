@@ -17,7 +17,7 @@ function App() {
     
     <div className="App">
       <div className="search-bar-container">
-        <h1>Movie Watch List</h1>
+        <h1>Movie Marathoner</h1>
         <SearchBar />
         <div>SearchResults</div>
       </div>
