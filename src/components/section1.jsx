@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import { Droppable, Draggable } from '@hello-pangea/dnd';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -45,7 +44,7 @@ useEffect(()=>{setMovieList(characters.sections[0].movies)},[characters.sections
                                                             <p>
                                                                 {title}
                                                             </p>
-                                                            <img src={poster}></img>
+                                                            <img alt='Movie Poster' src={poster}></img>
 
                                                         </div>
                                                 </li>
@@ -60,8 +59,6 @@ useEffect(()=>{setMovieList(characters.sections[0].movies)},[characters.sections
                             }}
 
                         </Droppable>
-
-                        <p id='apiMovie'></p>
 
                     </Box>
                 </CardContent>
