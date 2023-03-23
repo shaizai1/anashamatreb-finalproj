@@ -16,11 +16,15 @@ function FinishedWatching({ characters, setCharacters }) {
         <div>
             <React.Fragment>
                 <CssBaseline />
+                <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+                            Finished Watching
+                        </Typography>
 
                 <Container fixed>
                     <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
-                        <h3> Finished Watching </h3>
-
+                        
                         <Droppable droppableId={characters.sections[2].id}>
                             {(provided) => {
                                 return <ul {...provided.droppableProps} ref={provided.innerRef}>
@@ -53,11 +57,7 @@ function FinishedWatching({ characters, setCharacters }) {
                     </Box>
                 </Container>
 
-                <Card sx={{ minWidth: 275 }}>
-                    <CardContent>
-                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
-                            Finished Watching
-                        </Typography>
+            
                     </CardContent>
                 </Card>
 

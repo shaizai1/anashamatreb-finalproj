@@ -19,24 +19,28 @@ function CurrentlyWatching({characters,setCharacters}) {
         <div>
             <React.Fragment>
                 <CssBaseline />
+                <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+                            Currently Watching
+                        </Typography>
 
                 <Container fixed>
                     <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
-                        <h3>Currently Watching</h3>
-                      
+                    
                         <Droppable droppableId= {characters.sections[1].id}>
                             {(provided) => {
-                               return <ul {...provided.droppableProps} ref={provided.innerRef}>
+                            return <ul {...provided.droppableProps} ref={provided.innerRef}>
 
                                     {movieList.map(({poster, title, year, id}, index) => {
                                         return (
         
                                         <Draggable key={id} draggableId={id} index={index}>
                                             {(provided)=>{
-                                               return <li {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
+                                            return <li {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
                                                         <div>
                                                             <p>
-                                                                 {title}
+                                                                {title}
                                                             </p>
                                                             <img src={poster}></img>
 
@@ -56,11 +60,7 @@ function CurrentlyWatching({characters,setCharacters}) {
                     </Box>
                 </Container>
 
-                <Card sx={{ minWidth: 275 }}>
-                    <CardContent>
-                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
-                            Currently Watching
-                        </Typography>
+            
                     </CardContent>
                 </Card>
 

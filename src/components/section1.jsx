@@ -26,7 +26,6 @@ useEffect(()=>{setMovieList(characters.sections[0].movies)},[characters.sections
 
 
                     <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
-                        <h3> Movies to Watch </h3>
                         <Droppable droppableId={characters.sections[0].id}>
                             {(provided) => {
                                 console.log(provided);
