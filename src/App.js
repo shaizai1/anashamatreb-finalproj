@@ -5,6 +5,7 @@ import CurrentlyWatching from './components/section2';
 import FinishedWatching from './components/section3';
 import MoviesToWatch from './components/section1';
 import MovieQuote from './components/MovieQuote';
+import Jumbotron from './components/jumbotron'
 
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 
@@ -110,13 +111,29 @@ function App() {
   return (
 
     <div className="App">
-      <div className="search-bar-container">
 
-        <h1>Movie Marathoner</h1>
-        <SearchBar characters={characters} setCharacters={setCharacters} />
-
-        <div>SearchResults</div>
+<div className="search-bar-container">
+      
+      <SearchBar />
       </div>
+
+<div className="Jumbotron">
+
+        <Jumbotron />
+        
+        </div>
+
+        <div className='title'>
+        <h1 className='title'>Movie Watch List</h1>
+        </div>
+      
+      
+
+    <div className="sectiondivs">
+      <MoviesToWatch />
+      <CurrentlyWatching />
+      <FinishedWatching />
+
 
       <div className="sectiondivs">
         <DragDropContext onDragEnd={handleOnDragEnd}>
@@ -130,6 +147,7 @@ function App() {
 
 
         </DragDropContext>
+
       </div>
       <footer className='App-footer'>
         <MovieQuote />
