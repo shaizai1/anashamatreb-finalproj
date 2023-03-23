@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -13,17 +12,19 @@ function FinishedWatching({ characters, setCharacters }) {
     const [movieList, setMovieList] = useState(characters.sections[2].movies)
     useEffect(()=>{setMovieList(characters.sections[2].movies)},[characters.sections[2].movies])
 
-function FinishedWatching() {
-
     return (
         <div>
             <React.Fragment>
                 <CssBaseline />
+                <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+                            Finished Watching
+                        </Typography>
 
                 <Container fixed>
                     <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
-                        <h3> Finished Watching </h3>
-
+                        
                         <Droppable droppableId={characters.sections[2].id}>
                             {(provided) => {
                                 return <ul {...provided.droppableProps} ref={provided.innerRef}>
@@ -34,9 +35,9 @@ function FinishedWatching() {
                                             <Draggable key={id} draggableId={id} index={index}>
                                                 {(provided) => {
                                                     return <li {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
-                                                       <div>
+                                                    <div>
                                                             <p>
-                                                                 {title}
+                                                                {title}
                                                             </p>
                                                             <img src={poster}></img>
 
@@ -56,11 +57,7 @@ function FinishedWatching() {
                     </Box>
                 </Container>
 
-                <Card sx={{ minWidth: 275 }}>
-                    <CardContent>
-                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
-                            Finished Watching
-                        </Typography>
+            
                     </CardContent>
                 </Card>
 
@@ -70,6 +67,6 @@ function FinishedWatching() {
     )
 }
 
-export default FinishedWatching;
 
+export default FinishedWatching;
 
