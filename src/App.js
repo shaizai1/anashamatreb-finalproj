@@ -7,7 +7,7 @@ import MoviesToWatch from './components/section1';
 import MovieQuote from './components/MovieQuote';
 import Jumbotron from './components/jumbotron'
 
-import { DragDropContext} from '@hello-pangea/dnd';
+import { DragDropContext } from '@hello-pangea/dnd';
 
 function App() {
   //section 1, need 2 more
@@ -102,41 +102,48 @@ function App() {
 
     <div className="App">
 
-      <div className="search-bar-container">
+<div className='title'>
 
-        <SearchBar characters={characters} setCharacters={setCharacters}/>
+        <h1 className='title'>MovieMarathoner</h1>
+
       </div>
-
       <div className="Jumbotron">
 
         <Jumbotron />
 
       </div>
 
-      <div className='title'>
-        <h1 className='title'>Movie Watch List</h1>
+      
+
+      <div className="search-bar-container">
+
+        <SearchBar characters={characters} setCharacters={setCharacters} />
+      
       </div>
 
-        <div className="sectiondivs">
-          <DragDropContext onDragEnd={handleOnDragEnd}>
+      <div className="sectiondivs">
+        
+        <DragDropContext onDragEnd={handleOnDragEnd}>
 
+          <MoviesToWatch characters={characters} setCharacters={setCharacters} />
+          <CurrentlyWatching characters={characters} setCharacters={setCharacters} />
+          <FinishedWatching characters={characters} setCharacters={setCharacters} />
 
-            <MoviesToWatch characters={characters} setCharacters={setCharacters} />
+        </DragDropContext>
 
-            <CurrentlyWatching characters={characters} setCharacters={setCharacters} />
-            <FinishedWatching characters={characters} setCharacters={setCharacters} />
-
-
-
-          </DragDropContext>
-
-        </div>
-        <footer className='App-footer'>
-          <MovieQuote />
-        </footer>
       </div>
-)
+
+      <footer className='App-footer'>
+
+        <MovieQuote />
+
+      </footer>
+
+    </div>
+  )
 
 }
 
-      export default App;
+export default App;
+
+document.body.style = 'background: black;';
