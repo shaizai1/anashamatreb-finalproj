@@ -20,7 +20,7 @@ useEffect(()=>{setMovieList(characters.sections[0].movies)},[characters.sections
                     <CardContent>
                         <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
                             Movies to Watch
-                            <p id='apiMovie'></p>
+                        
                         </Typography>
 
 
