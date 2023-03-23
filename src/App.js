@@ -61,7 +61,7 @@ function App() {
       const sourceSectionId = characters.sections.findIndex(section => section.id === sInd);
       const destSectionId = characters.sections.findIndex(section => section.id === dInd);
       const result = move(sourceSectionId, destSectionId, source, destination);
-      const newCharacters = {...characters};
+      const newCharacters = { ...characters };
       newCharacters.sections[sourceSectionId].movies = result.source;
       newCharacters.sections[destSectionId].movies = result.dest;
 
@@ -112,50 +112,50 @@ function App() {
 
     <div className="App">
 
-<div className="search-bar-container">
-      
-      <SearchBar />
+      <div className="search-bar-container">
+
+        <SearchBar />
       </div>
 
-<div className="Jumbotron">
+      <div className="Jumbotron">
 
         <Jumbotron />
-        
-        </div>
 
-        <div className='title'>
+      </div>
+
+      <div className='title'>
         <h1 className='title'>Movie Watch List</h1>
-        </div>
-      
-      
+      </div>
 
-    <div className="sectiondivs">
-      <MoviesToWatch />
-      <CurrentlyWatching />
-      <FinishedWatching />
 
 
       <div className="sectiondivs">
-        <DragDropContext onDragEnd={handleOnDragEnd}>
+        <MoviesToWatch />
+        <CurrentlyWatching />
+        <FinishedWatching />
 
 
-          <MoviesToWatch characters={characters} setCharacters={setCharacters} />
-
-          <CurrentlyWatching characters={characters} setCharacters={setCharacters} />
-          <FinishedWatching characters={characters} setCharacters={setCharacters} />
+        <div className="sectiondivs">
+          <DragDropContext onDragEnd={handleOnDragEnd}>
 
 
+            <MoviesToWatch characters={characters} setCharacters={setCharacters} />
 
-        </DragDropContext>
+            <CurrentlyWatching characters={characters} setCharacters={setCharacters} />
+            <FinishedWatching characters={characters} setCharacters={setCharacters} />
 
+
+
+          </DragDropContext>
+
+        </div>
+        <footer className='App-footer'>
+          <MovieQuote />
+        </footer>
       </div>
-      <footer className='App-footer'>
-        <MovieQuote />
-      </footer>
-    </div>
-
-  );
+      </div>
+)
 
 }
 
-export default App;
+      export default App;
