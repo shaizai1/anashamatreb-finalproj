@@ -52,14 +52,13 @@ useEffect(()=>{setMovieList(characters.sections[0].movies)},[characters.sections
 
                                 
                                         </Draggable>
-                                        )
+                                        ) 
         
                                     })}
                                 </ul>
                             }}
 
                         </Droppable>
-
                     </Box>
                 </CardContent>
             </Card>  
