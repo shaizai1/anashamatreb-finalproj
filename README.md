@@ -21,13 +21,14 @@ It also utilizes the following libraries/packages:
 * Material UI
 * React DnD
 * Popular-movie-quotes npm package
+* Bootstrap
 
 ## Description and Usage
-This web application starts with a simple searchbar at the top. Once the user enters a movie title, this is stored in their search history. It will then be displayed in the 'Movies to watch' column.
+The application features a simple search bar at the top, allowing the user to easily search for movie titles. Once a title is entered, it is stored in the user's search history and displayed in the 'Movies to watch' column.
 
-Following this, the user can move their search results between three columns. This is through the drag and drop functionality, making it easy for the user to create organized movie watch-lists.
+With the drag and drop functionality, the user can effortlessly move their search results between three columns to create organized movie watch-lists, making it easier to keep track of the movies they want to see.
 
-At the bottom of the application, a random movie quote will be displayed in the footer. The random quote is generated and displayed when the page is refreshed. This is simply a nice touch to make the application more enjoyable for users.
+In addition to the practical features, the application adds a fun and entertaining touch by displaying a random movie quote in the footer each time the page is refreshed.
 
 ## Deployed Application
 Link to deployed application: https://poetic-nougat-605abc.netlify.app
