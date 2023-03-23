@@ -98,23 +98,13 @@ function App() {
   };
 
 
-
-
-  const rearangeArr = (arr, sourceIndex, destIndex) => {
-    const arrCopy = [...arr];
-    const [removed] = arrCopy.splice(sourceIndex, 1);
-    arrCopy.splice(destIndex, 0, removed);
-    return arrCopy;
-  }
-
-
   return (
 
     <div className="App">
 
       <div className="search-bar-container">
 
-        <SearchBar />
+        <SearchBar characters={characters} setCharacters={setCharacters}/>
       </div>
 
       <div className="Jumbotron">
@@ -126,14 +116,6 @@ function App() {
       <div className='title'>
         <h1 className='title'>Movie Watch List</h1>
       </div>
-
-
-
-      <div className="sectiondivs">
-        <MoviesToWatch />
-        <CurrentlyWatching />
-        <FinishedWatching />
-
 
         <div className="sectiondivs">
           <DragDropContext onDragEnd={handleOnDragEnd}>
@@ -152,7 +134,6 @@ function App() {
         <footer className='App-footer'>
           <MovieQuote />
         </footer>
-      </div>
       </div>
 )
 
