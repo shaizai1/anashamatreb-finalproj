@@ -7,7 +7,7 @@ import MoviesToWatch from './components/section1';
 import MovieQuote from './components/MovieQuote';
 import Jumbotron from './components/jumbotron'
 
-import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
+import { DragDropContext} from '@hello-pangea/dnd';
 
 function App() {
   //section 1, need 2 more
