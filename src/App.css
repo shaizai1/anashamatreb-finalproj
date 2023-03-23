@@ -2,11 +2,11 @@
 
 
 .App {
+  font-size: 16px;
   background-color: #020230;
   color: white;
-  font-family: 'Lucida Sans';
-  height: 60vh;
-  width: 100vw;
+  height: 60%;
+  width: 100%;
   text-align: center;
 }
 
@@ -20,6 +20,17 @@
   text-align: center;
 }
 
+footer{
+  display:  inline-block;
+  border: white double;
+  opacity: 90%;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
+  box-shadow: 0px 0px 8px #ddd;
+}
 
-/*align-items: 200px;
-min-width: 200px;*/
+footer h4, footer p, footer h5{
+  color:white;
+}
+

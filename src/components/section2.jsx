@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Droppable, Draggable } from '@hello-pangea/dnd';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography'
+
+
 
 
 function CurrentlyWatching({characters,setCharacters}) {
@@ -14,6 +20,7 @@ function CurrentlyWatching({characters,setCharacters}) {
         <div>
             <React.Fragment>
                 <CssBaseline />
+
                 <Container fixed>
                     <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
                         <h3>Currently Watching</h3>
@@ -49,6 +56,15 @@ function CurrentlyWatching({characters,setCharacters}) {
                         </Droppable>
                     </Box>
                 </Container>
+
+                <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+                            Currently Watching
+                        </Typography>
+                    </CardContent>
+                </Card>
+
             </React.Fragment>
 
         </div>

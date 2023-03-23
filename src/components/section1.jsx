@@ -1,25 +1,35 @@
 import React, { useEffect, useState } from 'react';
+import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Droppable, Draggable } from '@hello-pangea/dnd';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography'
 
 // import { SearchBar } from './SearchBar';
-
-
-
-
 
 function MoviesToWatch({characters,setCharacters}) {
 const [movieList, setMovieList]=useState(characters.sections[0].movies)
 useEffect(()=>{setMovieList(characters.sections[0].movies)},[characters.sections[0].movies])
 
-    
+
+function MoviesToWatch() {
     return (
         <div>
             <React.Fragment>
                 <CssBaseline />
-                <Container fixed>
+                <Card sx={{ minWidth: 275 }}>
+                    <CardContent>
+                        <Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+                            Movies to Watch
+                            <p id='apiMovie'></p>
+                        </Typography>
+
+                    </CardContent>
+                </Card>
+            </React.Fragment>
 
                     <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
                         <h3> Movies to Watch </h3>
