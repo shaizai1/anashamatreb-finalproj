@@ -33,22 +33,22 @@ At the bottom of the application, a random movie quote will be displayed in the 
 Link to deployed application: https://poetic-nougat-605abc.netlify.app
 
 ### Application Screenshot:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/before-search.png?raw=true" width="600">
 
 ### Application Screenshot - After Search:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/after-search.png?raw=true" width="600">
 
 ### Search bar:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/searchbar.png?raw=true" width="600">
 
 ### Main List Sections:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/main-sections.png?raw=true" width="600">
 
 ### Drag and drop functionality:
 <img src="." width="600">
 
 ### Movie Quote:
-<img src="." width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/footer.png?raw=true" width="600">
 
 ## Credits
 Use of OMDB API - https://www.omdbapi.com/
