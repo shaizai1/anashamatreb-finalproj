@@ -29,7 +29,7 @@ export const SearchBar = ({characters, setCharacters}) => {
             .then(data => {
                 console.log(data.Poster, data.Title, data.Year)
                 console.log(data)
-               
+            
                 const id = data.imdbID.replace(/\D/g,'');
                 console.log(data.imdbID)
                 const newMovie = {
