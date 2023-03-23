@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -12,8 +11,6 @@ import Typography from '@mui/material/Typography';
 function FinishedWatching({ characters, setCharacters }) {
     const [movieList, setMovieList] = useState(characters.sections[2].movies)
     useEffect(()=>{setMovieList(characters.sections[2].movies)},[characters.sections[2].movies])
-
-function FinishedWatching() {
 
     return (
         <div>
@@ -34,9 +31,9 @@ function FinishedWatching() {
                                             <Draggable key={id} draggableId={id} index={index}>
                                                 {(provided) => {
                                                     return <li {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
-                                                       <div>
+                                                    <div>
                                                             <p>
-                                                                 {title}
+                                                                {title}
                                                             </p>
                                                             <img src={poster}></img>
 
@@ -70,6 +67,6 @@ function FinishedWatching() {
     )
 }
 
-export default FinishedWatching;
 
+export default FinishedWatching;
 
