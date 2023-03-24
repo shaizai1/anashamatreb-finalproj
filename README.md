@@ -33,22 +33,19 @@ At the bottom of the application, a random movie quote will be displayed in the 
 Link to deployed application: https://poetic-nougat-605abc.netlify.app
 
 ### Application Screenshot:
-<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/aplication.png?raw=true" width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/Aplication.png" width="600">
 
 ### Application Screenshot - After Search:
-<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/after-search.png?raw=true" width="600">
-
-### Search bar:
-<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/searchbar.png?raw=true" width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/After%20search.png" width="600">
 
 ### Main List Sections:
-<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/sections.png?raw=true" width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/Sections.png" width="600">
 
 ### Drag and drop functionality:
-
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/Drag%20and%20drop.png" width="600">
 
 ### Movie Quote:
-<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/footer.png?raw=true" width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/Quote.png" width="600">
 
 ## Credits
 Use of OMDB API - https://www.omdbapi.com/
@@ -74,7 +71,5 @@ We worked together to produce this application by splitting the work between our
 ### HTML Mock-up:
 <img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/HTML-mock-up.png?raw=true" width="600">
 
-### Earlier version:
+### Earlier versions:
 <img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/Early-development.png?raw=true" width="600">
-
-
