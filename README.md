@@ -33,7 +33,7 @@ At the bottom of the application, a random movie quote will be displayed in the 
 Link to deployed application: https://poetic-nougat-605abc.netlify.app
 
 ### Application Screenshot:
-<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/before-search.png?raw=true" width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/aplication.png?raw=true" width="600">
 
 ### Application Screenshot - After Search:
 <img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/after-search.png?raw=true" width="600">
@@ -42,10 +42,10 @@ Link to deployed application: https://poetic-nougat-605abc.netlify.app
 <img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/searchbar.png?raw=true" width="600">
 
 ### Main List Sections:
-<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/main-sections.png?raw=true" width="600">
+<img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/sections.png?raw=true" width="600">
 
 ### Drag and drop functionality:
-<img src="." width="600">
+
 
 ### Movie Quote:
 <img src="https://github.com/shaizai1/anashamatreb-finalproj/blob/main/assets/images/footer.png?raw=true" width="600">
