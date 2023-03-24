@@ -1,43 +1,121 @@
-
-
-
+/*Body style */
 .App {
   background-color: #00000d;
-  color: white;
+  color: #c1aa17;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   height: 60vh;
   width: 100vw;
   text-align: center;
 }
 
+/* Title style */
+
+.title {
+  background-color: black;
+  padding: 1vh ;
+  color: #fff;
+  text-shadow:
+      0 0 7px #c1aa17,
+      0 0 10px #c1aa17,
+      0 0 21px #c1aa17,
+      0 0 42px #c1aa17,
+      0 0 82px #c1aa17,
+      0 0 20px #c1aa17,
+      0 0 20px #c1aa17,
+      0 0 20px #c1aa17;
+
+}
+
+/* Jumbotron style */
+
+.masthead {
+  position: relative;
+  width: 100%;
+  padding: 150px;
+  color: white;
+  background: url(https://img.freepik.com/free-photo/dark-vip-cinema-studio-still-life_23-2149500607.jpg?w=826&t=st=1679527961~exp=1679528561~hmac=4c84729078bde14624f01a4ef15671e15182cca9ce6229e15e1ed7aa3a6c832f);
+  background-size:cover;
+  background-position: center;
+  box-shadow: 0 0 50px 50px black inset;
+}
+
+.jumbotron-h1 {
+  color: #c1aa17;
+  text-align:right;
+  font-size:20px;
+}
+
+/* Sections style */
+
+.sectiondivs{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family:'Lucida Sans';
+  background-color: black;
+  margin: 2%;
+  padding-bottom: 5%;
+}
+
+.ul-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Search Bar style */
+
 .search-bar-container {
-  padding-top: 5vh;
+  padding: 9vh;
   width: 40%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: #00000d;
 }
 
-.title {
-  background-color: black;
-  padding: 3vh ;
-  color: #c1aa17;
-
+.input-wrapper {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px #ddd;
+  display: flex;
+  align-items: center;
 }
 
+input {
+  background-color: transparent;
+  border: none;
+  height: 30%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Footer style */
 footer{
-  display:  inline-block;
-  border: white double;
+  border: rgb(144, 127, 59) double;
   opacity: 90%;
   border-radius: 10px;
   padding: 2%;
   margin: 2%;
-  box-shadow: 0px 0px 8px #ddd;
+  box-shadow: 0px 0px 8px #dddddd;
+  background-color: #00000d;
+
+  
 }
 
 footer h4, footer p, footer h5{
-  color:white;
+  color: grey;
+
 }
 

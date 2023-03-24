@@ -23,11 +23,11 @@ function FinishedWatching({ characters, setCharacters }) {
                         </Typography>
 
                 <Container fixed>
-                    <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
+                    <Box sx={{ bgcolor: 'white', color: '#020230', height: '90vh', width: '40vh' }} >
                         
                         <Droppable droppableId={characters.sections[2].id}>
                             {(provided) => {
-                                return <ul {...provided.droppableProps} ref={provided.innerRef}>
+                                return <ul {...provided.droppableProps} ref={provided.innerRef} className="ul-style">
 
                                     {movieList.map(({ poster, title, year, id }, index) => {
                                         return (

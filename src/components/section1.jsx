@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 import { Droppable, Draggable } from '@hello-pangea/dnd';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -23,12 +24,12 @@ useEffect(()=>{setMovieList(characters.sections[0].movies)},[characters.sections
                         
                         </Typography>
 
-
-                    <Box sx={{ bgcolor: '#cfe8fc', color: '#020230', height: '90vh', width: '40vh' }} >
+                        <Container fixed>
+                    <Box sx={{ bgcolor: 'white', color: '#020230', height: '90vh', width: '40vh' }} >
                         <Droppable droppableId={characters.sections[0].id}>
                             {(provided) => {
                                 console.log(provided);
-                            return <ul {...provided.droppableProps} ref={provided.innerRef}>
+                            return <ul {...provided.droppableProps} ref={provided.innerRef} className="ul-style">
 
                                     { console.log(movieList)}
 
@@ -60,6 +61,7 @@ useEffect(()=>{setMovieList(characters.sections[0].movies)},[characters.sections
 
                         </Droppable>
                     </Box>
+                    </Container>    
                 </CardContent>
             </Card>  
         </React.Fragment>
